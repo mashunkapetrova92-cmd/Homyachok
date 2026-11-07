@@ -367,7 +367,7 @@ section{scroll-margin-top:64px}
         <div class="cl"><b>Совершенно секретно</b><span>Внутри — конверт. Вскрывать только ей</span></div>
       </div>
 
-      <!-- ФОТО ОБЛОЖКИ: замени файл photos/cover.jpg, чтобы поменять фото -->
+      <!-- ФОТО ОБЛОЖКИ: замени файл cover.jpg, чтобы поменять фото -->
       <figure class="cover-photo" style="margin-block:0">
         <img src="cover.jpg" width="912" height="795" alt="Именинница в белом костюме" fetchpriority="high">
       </figure>
@@ -454,7 +454,7 @@ section{scroll-margin-top:64px}
       </div>
     </div>
     <div class="letter-grid">
-      <!-- ФОТО У ПИСЬМА: файл photos/portrait.jpg -->
+      <!-- ФОТО У ПИСЬМА: файл portrait.jpg -->
       <figure class="polaroid rv" style="margin:0">
         <img src="portrait.jpg" width="1067" height="1600" alt="Портрет в нежном платье" loading="lazy">
         <p>Красота, которой 34</p>
@@ -502,11 +502,11 @@ section{scroll-margin-top:64px}
         <p class="ui env-hint">Нажми на печать</p>
       </div>
 
-      <!-- ВИДЕО-ПОСЛАНИЕ: файл video/message.mp4, обложка видео video/poster.jpg -->
+      <!-- ВИДЕО-ПОСЛАНИЕ: файл message.mp4, обложка видео poster.jpg -->
       <div class="reveal" id="reveal" hidden>
         <div class="reveal-in">
           <video id="vid" controls playsinline preload="none" poster="poster.jpg">
-            <source src="message.mp4" type="mp4">
+            <source src="message.mp4" type="video/mp4">
           </video>
         </div>
         <div class="reveal-cap">
@@ -566,7 +566,7 @@ const AWARDS = [
 ];
 
 /* =====================================================================
-   АРХИВ. Чтобы добавить фото: положи файл в папку photos и добавь строку
+   АРХИВ. Чтобы добавить фото: загрузи файл в репозиторий рядом с index.html и добавь строку
    {src:"имя.jpg", w:ширина, h:высота, cap:"подпись"}.
    feature:true — фото крупнее (первым в колонке). Порядок = порядок на сайте.
    ===================================================================== */
