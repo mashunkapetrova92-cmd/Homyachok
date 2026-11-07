@@ -369,7 +369,7 @@ section{scroll-margin-top:64px}
 
       <!-- ФОТО ОБЛОЖКИ: замени файл photos/cover.jpg, чтобы поменять фото -->
       <figure class="cover-photo" style="margin-block:0">
-        <img src="photos/cover.jpg" width="912" height="795" alt="Именинница в белом костюме" fetchpriority="high">
+        <img src="cover.jpg" width="912" height="795" alt="Именинница в белом костюме" fetchpriority="high">
       </figure>
 
       <!-- ПОДЗАГОЛОВОК ОБЛОЖКИ -->
@@ -456,7 +456,7 @@ section{scroll-margin-top:64px}
     <div class="letter-grid">
       <!-- ФОТО У ПИСЬМА: файл photos/portrait.jpg -->
       <figure class="polaroid rv" style="margin:0">
-        <img src="photos/portrait.jpg" width="1067" height="1600" alt="Портрет в нежном платье" loading="lazy">
+        <img src="portrait.jpg" width="1067" height="1600" alt="Портрет в нежном платье" loading="lazy">
         <p>Красота, которой 34</p>
       </figure>
 
@@ -505,8 +505,8 @@ section{scroll-margin-top:64px}
       <!-- ВИДЕО-ПОСЛАНИЕ: файл video/message.mp4, обложка видео video/poster.jpg -->
       <div class="reveal" id="reveal" hidden>
         <div class="reveal-in">
-          <video id="vid" controls playsinline preload="none" poster="video/poster.jpg">
-            <source src="video/message.mp4" type="video/mp4">
+          <video id="vid" controls playsinline preload="none" poster="poster.jpg">
+            <source src="message.mp4" type="mp4">
           </video>
         </div>
         <div class="reveal-cap">
@@ -567,26 +567,26 @@ const AWARDS = [
 
 /* =====================================================================
    АРХИВ. Чтобы добавить фото: положи файл в папку photos и добавь строку
-   {src:"photos/имя.jpg", w:ширина, h:высота, cap:"подпись"}.
+   {src:"имя.jpg", w:ширина, h:высота, cap:"подпись"}.
    feature:true — фото крупнее (первым в колонке). Порядок = порядок на сайте.
    ===================================================================== */
 const ARCHIVE = [
-  {src:"photos/pool-2012.jpg", w:1600,h:1067, tag:"29.05.2012", cap:"Бассейн, солнце и синхронное плавание по-нашему.", feature:true},
-  {src:"photos/sepia.jpg",     w:1205,h:1024, tag:"Где-то в начале", cap:"Ещё совсем юные и уже опасные."},
-  {src:"photos/wedding.jpg",   w:1065,h:1600, tag:"Тот самый день", cap:"Подружки невесты знают, что делать."},
-  {src:"photos/kitchen.jpg",   w:1600,h:900,  tag:"Кухня", cap:"Травма? Нет, повод для фотосессии."},
-  {src:"photos/restaurant.jpg",w:1242,h:928,  tag:"Вечер", cap:"Ужин втроём. Десерт был, совесть — нет."},
-  {src:"photos/massage.jpg",   w:1200,h:1600, tag:"Сеанс", cap:"Массаж. Лицензии нет, энтузиазма много."},
-  {src:"photos/winter.jpg",    w:1233,h:1035, tag:"Зима", cap:"Шапки, полоски и тёплые объятия."},
-  {src:"photos/toddler.jpg",   w:1202,h:1600, tag:"Семейное", cap:"Серьёзные лица. Несерьёзные мы."},
-  {src:"photos/sparkles.jpg",  w:952, h:1600, tag:"Фильтр", cap:"Блёстки обязательны. Это закон."},
-  {src:"photos/bw-leather.jpg",w:1066,h:1600, tag:"Фотосессия", cap:"Фотограф сказал «сделайте лицо». Мы сделали."},
-  {src:"photos/shoulders.jpg", w:1125,h:750,  tag:"Плечом к плечу", cap:"Буквально."},
-  {src:"photos/family.jpg",    w:1125,h:844,  tag:"Самое ценное", cap:"Все любимые в одном кадре."},
-  {src:"photos/mummy.jpg",     w:900, h:1600, tag:"Мумия дня", cap:"Сборка силами юного ассистента."},
-  {src:"photos/forest.jpg",    w:1600,h:1200, tag:"Лес", cap:"Солнце, деревья и редкий кадр без происшествий."},
-  {src:"photos/lake.jpg",      w:960, h:1280, tag:"У воды", cap:"Очки как у звёзд, ветер как в клипе."},
-  {src:"photos/sea.jpg",       w:1600,h:1383, tag:"Море", cap:"Курортный режим включён."}
+  {src:"pool-2012.jpg", w:1600,h:1067, tag:"29.05.2012", cap:"Бассейн, солнце и синхронное плавание по-нашему.", feature:true},
+  {src:"sepia.jpg",     w:1205,h:1024, tag:"Где-то в начале", cap:"Ещё совсем юные и уже опасные."},
+  {src:"wedding.jpg",   w:1065,h:1600, tag:"Тот самый день", cap:"Подружки невесты знают, что делать."},
+  {src:"kitchen.jpg",   w:1600,h:900,  tag:"Кухня", cap:"Травма? Нет, повод для фотосессии."},
+  {src:"restaurant.jpg",w:1242,h:928,  tag:"Вечер", cap:"Ужин втроём. Десерт был, совесть — нет."},
+  {src:"massage.jpg",   w:1200,h:1600, tag:"Сеанс", cap:"Массаж. Лицензии нет, энтузиазма много."},
+  {src:"winter.jpg",    w:1233,h:1035, tag:"Зима", cap:"Шапки, полоски и тёплые объятия."},
+  {src:"toddler.jpg",   w:1202,h:1600, tag:"Семейное", cap:"Серьёзные лица. Несерьёзные мы."},
+  {src:"sparkles.jpg",  w:952, h:1600, tag:"Фильтр", cap:"Блёстки обязательны. Это закон."},
+  {src:"bw-leather.jpg",w:1066,h:1600, tag:"Фотосессия", cap:"Фотограф сказал «сделайте лицо». Мы сделали."},
+  {src:"shoulders.jpg", w:1125,h:750,  tag:"Плечом к плечу", cap:"Буквально."},
+  {src:"family.jpg",    w:1125,h:844,  tag:"Самое ценное", cap:"Все любимые в одном кадре."},
+  {src:"mummy.jpg",     w:900, h:1600, tag:"Мумия дня", cap:"Сборка силами юного ассистента."},
+  {src:"forest.jpg",    w:1600,h:1200, tag:"Лес", cap:"Солнце, деревья и редкий кадр без происшествий."},
+  {src:"lake.jpg",      w:960, h:1280, tag:"У воды", cap:"Очки как у звёзд, ветер как в клипе."},
+  {src:"sea.jpg",       w:1600,h:1383, tag:"Море", cap:"Курортный режим включён."}
 ];
 
 /* ---------- эмблемы наград (SVG) ---------- */
